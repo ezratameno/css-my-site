@@ -4,24 +4,35 @@
     <meta charset="utf-8">
     <title>Ezra Tameno</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!--Adding Sacramento, Montserrat and Merriweather fonts to our website-->
 <link href="https://fonts.googleapis.com/css?family=Merriweather|Sacramento|Montserrat" rel="stylesheet">
+<!--Adding bootstrap to our website through quick start in the bootstrap website-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<!--Adding javascript and jQuery to our website through quick start in the bootstrap website-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <link rel="icon" href="images/favicon.jpeg">
   </head>
   <body>
-    <div class="TopContainer">
+    <!-- Top Container-->
+    <section id="TopContainer" >
       <img class="TopCloud" src="images/cloud.png" alt="cloud image">
       <h1>I'm Ezra.</h1>
       <h2>a programmer</h2>
       <img class="BottomCloud" src="images/cloud.png" alt="cloud image">
       <img src="images/mountain.png" alt="mountain image">
-    </div>
-    <div class="MiddleContainer">
+    </section>
+    <!-- Middle Container-->
+    <section id="MiddleContainer" >
       <div class="profile">
         <img class="ProfilePicture" src="images/Ezra Tameno.png" alt="Ezra Tameno profile picture">
         <h2>Hello.</h2>
         <p class="intro">My name is Ezra, welcome to my personal website.</p>
       </div>
       <hr>
+      <!-- Skills -->
       <div class="skills">
         <h2>My Skills</h2>
         <div class="skillRow">
@@ -36,6 +47,53 @@
         </div>
       </div>
       <hr>
+      <div class="projects">
+        <h2>My Projects</h2>
+        <!-- enables resonsivie componnents -->
+
+        <div class="carousel-warpper">
+
+        <div id="projects-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card card-project" >
+                  <img class="project-image" src="images/TicTacToe.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">TicTacToe</h5>
+                    <p class="card-text">Remember the old TicTacToe you used to play with your friends?
+                    well now you can play it again !</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card card-project">
+                <img class="project-image" src="images/painter.png" class="card-img-Top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Painter</h5>
+                  <p class="card-text">Tired of the same old windows painter?
+                  well now you can use my new painter !</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              </div>
+              <!-- control buttons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      <hr>
+      <!-- contact me -->
       <div class="contact-me">
         <h2>Get In Touch</h2>
         <h3>If you love reading or Development as much as i do</h3>
@@ -43,10 +101,14 @@
         <a class="btn" href="mailto:ezratameno@gmail.com">CONTACT ME</a>
       </div>
     </div>
-    <div class="ButtomContainer">
+  </section>
+
+  <!-- Buttom Container-->
+
+    <section id="ButtomContainer">
       <a class="footer-link" href="https://www.linkedin.com/in/ezra-tameno/">LinkedIn</a>
       <a class="footer-link" href="https://github.com/ezratameno">Git Hub</a>
       <p class="CopyRight">© 2021 Ezra Tameno</p>
-    </div>
+    </section>
   </body>
 </html>

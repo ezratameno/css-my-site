@@ -54,19 +54,28 @@ a:hover{
   width: 40%;
   margin: 40px auto 60px;
 }
-.TopContainer {
+#TopContainer {
   background-color: #E4F9F5;
   position: relative;
   padding-top: 100px;
 }
-.MiddleContainer{
+#MiddleContainer{
   margin: 100px 0 ;
 }
-.BottomCloud {
+.project-image{
+    width: 30%;
+    margin: auto;
+    padding-bottom: 1%;
+}
+#BottomCloud {
   position: absolute;
   left: 250px;
   bottom: 300px;
 }
+
+.card-project{
+  background-color: #EF8172;
+  }
 .TopCloud{
   position: absolute;
   right: 300px;
